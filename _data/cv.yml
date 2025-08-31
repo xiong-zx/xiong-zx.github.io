@@ -35,13 +35,12 @@
         - Visited as an exchange student in the Faculty of Arts and Science.
         - Joined the research group of Prof. <a href="https://cglee.mie.utoronto.ca/">Chi-Guhn Lee</a> in the Department of Mechanical and Industrial Engineering.
 
-
 - title: Honors and Awards
   type: time_table
   contents:
     - year: 2023.10
-      items: First Prize in the 31st China Physics Olympiad (Shanghai Region) 
-    
+      items: First Prize in the 31st China Physics Olympiad (Shanghai Region)
+
     - year: 2023.11
       items: First Prize in the Tsinghua University Physics Autumn Camp
 
@@ -49,7 +48,7 @@
   type: nested_list
   contents:
     - title: Machine Learning
-      items: 
+      items:
         - Machine Learning for Optimization
         - Guided Diffusion Process
 
