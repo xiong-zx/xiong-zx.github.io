@@ -6,7 +6,7 @@ subtitle: <i>Victory belongs to the most tenacious.</i>
 
 profile:
   align: right
-  image: headshot.jpg
+  image: pic_1.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
 
