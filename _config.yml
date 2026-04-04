@@ -49,7 +49,7 @@ navbar_fixed: true
 footer_fixed: true
 search_enabled: false
 socials_in_search: false
-posts_in_search: true
+posts_in_search: false
 bib_search: true
 
 # Dimensions
@@ -85,10 +85,10 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-# blog_name: al-folio # blog_name will be displayed in your blog page
-# blog_description: a simple whitespace theme for academics
-# permalink: /blog/:year/:title/
-# lsi: false # produce an index for related posts
+blog_name: Zhixiao's Blog # blog_name will be displayed in your blog page
+blog_description: A gallery of my notes, experiences and thoughts.
+permalink: /blog/:year/:title/
+lsi: false # produce an index for related posts
 
 # Pagination
 pagination:
@@ -147,7 +147,7 @@ collections:
   news:
     defaults:
       layout: post
-    output: false
+    output: true
   projects:
     output: false
 
@@ -171,17 +171,17 @@ kramdown:
 # Includes & excludes
 include: ["_pages", "_scripts"]
 exclude:
-  - _pages/blog.md
+  # - _pages/blog.md
   - _pages/books.md
+  # - _pages/news.md
   - _pages/projects.md
-  - _pages/news.md
   - _pages/profiles.md
   - _pages/repositories.md
   - _pages/teaching.md
   - _books/
-  - _news/
+  # - _news/
+  # - _posts/
   - _projects/
-  - _posts/
   - bin/
   - CONTRIBUTING.md
   - CUSTOMIZE.md
