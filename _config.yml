@@ -6,10 +6,9 @@ title: Zhixiao Xiong # the website title (if blank, full name will be used inste
 first_name: Zhixiao
 middle_name:
 last_name: Xiong
-contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Zhixiao Xiong, PhD student in Operations Research at UC Berkeley. Research in machine learning and optimization.
 footer_text:
   # Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   # Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -142,14 +141,10 @@ newsletter:
 # -----------------------------------------------------------------------------
 
 collections:
-  books:
-    output: false
   news:
     defaults:
       layout: post
     output: true
-  projects:
-    output: false
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -171,35 +166,19 @@ kramdown:
 # Includes & excludes
 include: ["_pages", "_scripts"]
 exclude:
-  # - _pages/blog.md
-  - _pages/books.md
-  # - _pages/news.md
-  - _pages/projects.md
-  - _pages/profiles.md
-  - _pages/repositories.md
-  - _pages/teaching.md
-  - _books/
-  # - _news/
-  # - _posts/
-  - _projects/
   - bin/
-  - CONTRIBUTING.md
-  - CUSTOMIZE.md
+  - AGENTS.md
   - Dockerfile
   - docker-compose.yml
   - docker-compose-slim.yml
-  - FAQ.md
   - Gemfile
   - Gemfile.lock
-  - INSTALL.md
   - LICENSE
-  - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/about_einstein.md
   - purgecss.config.js
   - README.md
-  - readme_preview/
+  - requirements.txt
   - vendor
 keep_files:
   - CNAME
@@ -262,12 +241,6 @@ terser:
 #       year: "/blog/:year/"
 #       tags: "/blog/:type/:name/"
 #       categories: "/blog/:type/:name/"
-#   books:
-#     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
-
-# display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
-# display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
-
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
 # -----------------------------------------------------------------------------
@@ -391,7 +364,7 @@ enable_pirsch_analytics: false # enables Pirsch analytics (https://pirsch.io/)
 enable_openpanel_analytics: false # enables Openpanel analytics (https://openpanel.dev/)
 enable_google_verification: false # enables google site verification
 enable_bing_verification: false # enables bing site verification
-enable_masonry: true # enables automatic project cards arrangement
+enable_masonry: false # enables automatic project cards arrangement
 enable_math: true # enables math typesetting (uses MathJax)
 enable_tooltips: false # enables automatic tooltip links generated for each section titles on pages and posts
 enable_darkmode: true # enables switching between light/dark modes
@@ -629,24 +602,3 @@ third_party_libraries:
       css: "https://cdn.jsdelivr.net/npm/venobox@{{version}}/dist/venobox.min.css"
       js: "https://cdn.jsdelivr.net/npm/venobox@{{version}}/dist/venobox.min.js"
     version: "2.1.8"
-# -----------------------------------------------------------------------------
-# Get external JSON data
-# -----------------------------------------------------------------------------
-
-# jekyll_get_json:
-#   - data: resume
-#     json: assets/json/resume.json # it can also be an url
-
-# jsonresume:
-#   - basics
-#   - work
-#   - education
-#   - publications
-#   - projects
-#   - volunteer
-#   - awards
-#   - certificates
-#   - skills
-#   - languages
-#   - interests
-#   - references
