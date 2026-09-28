@@ -23,7 +23,17 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{
+        },{id: "nav-news",
+          title: "News",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/news/";
+          },
+        },{id: "news-released-heavy-tailed-noise-lean-a-lean-4-formalization-of-lower-bounds-for-strict-k-1-stochastic-optimization-under-heavy-tailed-noise",
+          title: 'Released heavy-tailed-noise-lean, a Lean 4 formalization of lower bounds for strict-K=1 stochastic optimization...',
+          description: "",
+          section: "News",},{
       id: 'light-theme',
       title: 'Change theme to light',
       description: 'Change the theme of the site to Light',
