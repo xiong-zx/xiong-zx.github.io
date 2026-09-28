@@ -23,27 +23,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-news",
-          title: "News",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/news/";
-          },
-        },{id: "nav-blog",
-          title: "Blog",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/blog/";
-          },
-        },{id: "nav-misc",
-          title: "Misc",
-          description: "This page is currently under construction.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/misc/";
-          },
         },{
       id: 'light-theme',
       title: 'Change theme to light',
