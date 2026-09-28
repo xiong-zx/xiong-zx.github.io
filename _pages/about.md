@@ -2,7 +2,6 @@
 layout: about
 title: About
 permalink: /
-subtitle: <i>小舟从此逝，江海寄余生。</i>
 
 profile:
   align: right
@@ -14,7 +13,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 
 announcements:
-  enabled: false # enable when there are news items to display
+  enabled: true # show recent news on the homepage
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 

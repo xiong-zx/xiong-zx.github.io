@@ -17,13 +17,13 @@ If the existing preview container is already running, use it directly. Manage it
 ## Content
 
 - `_pages/about.md`: biography and homepage settings.
-- `_data/cv.yml` and `assets/pdf/CV.pdf`: CV content and download.
+- `_data/cv.yml`: website CV; `assets/pdf/CV.pdf`: separately maintained download.
 - `_bibliography/my_papers.bib`: publications.
 - `_data/socials.yml`: verified contact links.
 - `assets/img/`: personal photographs.
 - `_config.yml`: site settings and optional features.
 
-Blog and News navigation is hidden until populated. Add posts to `_posts/YYYY-MM-DD-title.md` or announcements to `_news/`; enable the corresponding page's `nav` setting. Enable `announcements.enabled` in `_pages/about.md` to show news on the homepage.
+News items in `_news/` appear on the homepage and News page. Blog navigation is hidden until you add posts to `_posts/YYYY-MM-DD-title.md` and enable `nav` in `_pages/blog.md`.
 
 ## Validation and publishing
 

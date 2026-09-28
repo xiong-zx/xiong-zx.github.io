@@ -2,7 +2,7 @@
 layout: page
 title: News
 permalink: /news/
-nav: false # enable when there are news items to display
+nav: true
 nav_order: 3
 ---
 

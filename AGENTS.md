@@ -9,7 +9,7 @@ This repository hosts a personal academic website built with Jekyll and the al-f
 - `_layouts/` and `_includes/`: reusable Liquid templates.
 - `_sass/`, `assets/`, and `_scripts/`: styles, JavaScript, images, PDFs, and generated-script templates.
 - `_plugins/`: Ruby build extensions; `_config.yml`: site configuration.
-- `_posts/` and `_news/`: future blog posts and announcements; create content directories when needed. Their navigation is currently hidden.
+- `_posts/` and `_news/`: blog posts and announcements. Blog navigation is currently hidden; news appears on the homepage.
 - `.github/workflows/`: build, deployment, formatting, link, and accessibility checks. `_site/` contains generated output.
 
 ## Build, Test, and Development Commands
