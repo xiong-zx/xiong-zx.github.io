@@ -904,15 +904,6 @@ code {
   padding: 3px 3px;
 }
 
-// Transitioning Themes
-html.transition,
-html.transition *,
-html.transition *:before,
-html.transition *:after {
-  transition: all 750ms !important;
-  transition-delay: 0 !important;
-}
-
 // Extra Markdown style (post Customization)
 .post {
   .post-meta {

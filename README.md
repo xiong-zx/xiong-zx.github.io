@@ -14,9 +14,12 @@ Open <http://localhost:8080>. Content changes rebuild automatically. Stop with `
 
 If the existing preview container is already running, use it directly. Manage it with `docker stop xiong-homepage-preview`, `docker start xiong-homepage-preview`, or `docker restart xiong-homepage-preview` after configuration changes.
 
+The preview restarts with Docker Desktop unless you explicitly stop the container. After a manual stop, start it again with the command above.
+
 ## Content
 
 - `_pages/about.md`: biography and homepage settings.
+- `_layouts/home.liquid` and `_sass/_editorial.scss`: homepage layout and shared visual style.
 - `_data/cv.yml`: website CV; `assets/pdf/CV.pdf`: separately maintained download.
 - `_bibliography/my_papers.bib`: publications.
 - `_data/socials.yml`: verified contact links.

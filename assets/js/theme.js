@@ -25,7 +25,6 @@ let setThemeSetting = (themeSetting) => {
 let applyTheme = () => {
   let theme = determineComputedTheme();
 
-  transTheme();
   setHighlight(theme);
   setGiscusTheme(theme);
   setSearchTheme(theme);
@@ -242,13 +241,6 @@ let setSearchTheme = (theme) => {
   } else {
     ninjaKeys.classList.remove("dark");
   }
-};
-
-let transTheme = () => {
-  document.documentElement.classList.add("transition");
-  window.setTimeout(() => {
-    document.documentElement.classList.remove("transition");
-  }, 500);
 };
 
 // Determine the expected state of the theme toggle, which can be "dark", "light", or
