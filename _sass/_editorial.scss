@@ -1,31 +1,4 @@
-// Shared typography and color, with homepage composition kept below.
-:root {
-  --global-bg-color: #f8f7f2;
-  --global-text-color: #243330;
-  --global-text-color-light: #626f69;
-  --global-theme-color: #2d6458;
-  --global-hover-color: #1d493e;
-  --global-divider-color: #d6dcd5;
-  --global-card-bg-color: #fcfbf7;
-  --global-footer-bg-color: transparent;
-  --global-footer-text-color: #626f69;
-  --global-footer-link-color: #2d6458;
-  --editorial-tint: #e4e9de;
-}
-
-html[data-theme="dark"] {
-  --global-bg-color: #17201e;
-  --global-text-color: #ecece2;
-  --global-text-color-light: #a6b2aa;
-  --global-theme-color: #a6c9b7;
-  --global-hover-color: #cce4d6;
-  --global-divider-color: #35443d;
-  --global-card-bg-color: #202d27;
-  --global-footer-text-color: #a6b2aa;
-  --global-footer-link-color: #a6c9b7;
-  --editorial-tint: #2b3d32;
-}
-
+// Shared typography, with homepage composition kept below.
 .site-shell {
   min-height: 100vh;
   display: flex;
@@ -59,6 +32,22 @@ html[data-theme="dark"] {
     flex: 1;
     margin-top: 0 !important;
     padding-top: 3rem;
+
+    a[href]:not(.btn) {
+      color: var(--global-theme-color);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.18em;
+
+      &:hover {
+        color: var(--global-hover-color);
+        text-decoration-thickness: 2px;
+      }
+    }
+
+    .publications h2.bibliography {
+      color: var(--global-text-color-light);
+    }
   }
 
   .navbar {
@@ -83,10 +72,19 @@ html[data-theme="dark"] {
     font-size: 0.82rem;
   }
 
+  .navbar.navbar-light .navbar-nav .nav-item > .nav-link {
+    padding-inline: 0.65rem;
+
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 0.18em;
+    }
+  }
+
   .navbar.navbar-light .navbar-nav .nav-item.active > .nav-link {
-    font-weight: 500;
+    font-weight: 700;
     text-decoration: underline;
-    text-underline-offset: 6px;
+    text-underline-offset: 0.18em;
   }
 
   #light-toggle {
@@ -98,8 +96,16 @@ html[data-theme="dark"] {
     padding: 1.4rem 0;
     margin-top: 4rem !important;
     border-top: 1px solid var(--global-divider-color);
-    background: transparent;
+    background-color: var(--global-footer-bg-color);
     font-size: 0.75rem;
+
+    .container {
+      color: var(--global-footer-text-color);
+    }
+
+    a {
+      color: var(--global-footer-link-color);
+    }
   }
 }
 
@@ -124,11 +130,6 @@ html[data-theme="dark"] {
 .homepage {
   p {
     margin: 0 0 1.2rem;
-  }
-
-  a:hover {
-    text-decoration-thickness: 1px;
-    text-underline-offset: 4px;
   }
 
   .home-hero {
@@ -206,7 +207,7 @@ html[data-theme="dark"] {
       object-fit: cover;
       object-position: center 20%;
       border-radius: 2px;
-      box-shadow: 12px 12px 0 var(--editorial-tint);
+      box-shadow: 12px 12px 0 var(--global-code-bg-color);
     }
   }
 
@@ -251,6 +252,10 @@ html[data-theme="dark"] {
       font-size: 0.92rem;
       color: var(--global-text-color-light);
     }
+
+    strong {
+      font-weight: 700;
+    }
   }
 
   .work-entry {
@@ -277,10 +282,6 @@ html[data-theme="dark"] {
     h3 {
       font-size: 1.7rem;
       margin: 0 0 0.7rem;
-
-      a {
-        color: var(--global-text-color);
-      }
 
       span {
         font-family: sans-serif;
@@ -425,7 +426,7 @@ html[data-theme="dark"] {
 
     .home-portrait img {
       height: 175px;
-      box-shadow: 8px 8px 0 var(--editorial-tint);
+      box-shadow: 8px 8px 0 var(--global-code-bg-color);
     }
 
     .hero-deck {

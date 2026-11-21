@@ -31,11 +31,11 @@ description: Stochastic nonconvex optimization, machine learning, and decision-d
   <div class="research-columns">
     <div>
       <h3>Stochastic nonconvex optimization</h3>
-      <p>I study optimization algorithms in the presence of randomness, motivated by the methods used in machine learning. I am interested in how noise shapes their behavior, what can be guaranteed, and how theoretical insights can inform algorithm design.</p>
+      <p>I study optimization algorithms in the presence of randomness, motivated by the methods used in machine learning. I am interested in <strong>how noise shapes their behavior</strong>, what can be guaranteed, and how theoretical insights can inform algorithm design.</p>
     </div>
     <div>
       <h3>Learning while optimizing</h3>
-      <p>I am also interested in decision-dependent optimization, where decisions influence the data available for learning. With a limited budget, how should we balance improving a decision with collecting new data? This perspective brings learning and optimization into the same iterative process.</p>
+      <p>I am also interested in <strong>decision-dependent optimization</strong>, where decisions influence the data available for learning. With a limited budget, how should we balance improving a decision with collecting new data? This perspective brings learning and optimization into the same iterative process.</p>
     </div>
   </div>
 </section>
